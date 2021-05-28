@@ -1,0 +1,14 @@
+.bottom{
+    grid-area: bottom;
+    display:grid;
+    grid-template: 1fr/160px 80px;
+    
+}
+
+.item_bottom{
+    border-radius: 5px;
+    border:1px solid white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}

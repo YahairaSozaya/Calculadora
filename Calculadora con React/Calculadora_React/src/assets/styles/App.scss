@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+    font-family: 'Akaya Kanadaka', cursive;
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+body{
+    background: linear-gradient(#f69d3c,#BC335D);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.calculator{
+    width: 400px;
+    border-radius: 5px;
+    height: 600px;
+    background: rgba(217,135,114,.97);
+    box-shadow: 1px 1px 1px 1px black;
+    display:grid;
+}
+
+.buttons{
+    display: grid;
+    grid-template: 320px 80px/240px 80px;
+    grid-template-areas:"botones right"
+            "bottom right";
+    justify-self: center;
+  
+}

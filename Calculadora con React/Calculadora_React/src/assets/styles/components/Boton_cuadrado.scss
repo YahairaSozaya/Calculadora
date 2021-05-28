@@ -1,0 +1,19 @@
+.botones{
+    grid-area: botones;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+
+.botones_cuadrado{
+    border-radius: 5px;
+    border:1px solid white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botones_cuadrado:active,.item_right:active, .item_bottom:active{
+    background: black;
+}

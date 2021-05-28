@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+    font-family: 'Akaya Kanadaka', cursive;
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+body{
+    background: linear-gradient(#f69d3c,#BC335D);
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.calculator{
+    padding:10px;
+    margin:10px 0px 10px 0px;
+    width: 400px;
+    border-radius: 5px;
+    height: 90%;
+    background: rgba(217,135,114,.97);
+    box-shadow: 1px 1px 1px 1px black;
+    display:grid;
+    grid-template-rows: 1fr 3fr;
+}
+
+.result{
+    width: 90%;
+    height: 80%;
+    background-color: #2A2A2A;
+    justify-self: center;
+    margin:5% 0 5% 0;
+    border:solid gray 1px;
+    display:flex;
+    padding:20px;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 30px;
+}
+
+.buttons{
+    display: grid;
+    width: 90%;
+    margin:0 0 5% 0;
+    grid-template: 4fr 1fr/3fr 1fr;
+    grid-template-areas:"botones right"
+            "bottom right";
+    justify-self: center;
+}
+
+
+.botones{
+    grid-area: botones;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+
+.botones_cuadrado{
+    border-radius: 5px;
+    border:1px solid white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botones_cuadrado:active,.item_right:active, .item_bottom:active{
+    background: black;
+}
+
+.right{
+    grid-area:right;
+    display:grid;
+    grid-template: 0.2fr .4fr .4fr/1fr;
+    
+}
+
+.item_right{
+    border-radius: 5px;
+    border:1px solid white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom{
+    grid-area: bottom;
+    display:grid;
+    grid-template: 1fr/ 2fr 1fr;
+    
+}
+
+.item_bottom{
+    border-radius: 5px;
+    border:1px solid white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gray{
+    background-color: #6E3E3E;
+}
+
+@media screen and (max-width:450px){
+    .calculator{
+        width:70%;
+    }
+    
+}

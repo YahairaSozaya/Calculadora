@@ -1,0 +1,14 @@
+.right{
+    grid-area:right;
+    display:grid;
+    grid-template: 80px 160px 160px/1fr;
+    
+}
+
+.item_right{
+    border-radius: 5px;
+    border:1px solid white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
