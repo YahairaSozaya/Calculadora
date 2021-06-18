@@ -1,9 +1,11 @@
 import React from 'react';
 import '../assets/styles/components/Resultado.scss';
 
-const Resultado=()=>(
+const Resultado=(props)=>(
     <div id="respuesta" className="result">
-        <div id="resultado_operacion"></div>
+        <div id={props.Id}>
+           <p>{props.valor}</p>
+        </div>
     </div>
 );
 
